@@ -1,4 +1,11 @@
 # Starter pipeline
+- task: ADOScheduledWorkItemQuery@0
+  inputs:
+    sendMethod: 'SMTP'
+    project: '1c45cfe0-d331-4421-b5e5-94958ea95782'
+    queryType: 'My'
+    sendIfEmpty: true
+    subject: 'Your query results'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
