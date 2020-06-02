@@ -1,4 +1,12 @@
 # Maven
+- task: ADOScheduledWorkItemQuery@0
+  inputs:
+    sendMethod: 'SMTP'
+    project: '1c45cfe0-d331-4421-b5e5-94958ea95782'
+    queryType: 'My'
+    sendIfEmpty: true
+    subject: 'Your query results'
+    emailAddresses: 'shivanshu.pandey@opshub.com'
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
